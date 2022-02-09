@@ -12,7 +12,11 @@
     <title>Movie App</title>
   </head>
   <body>
+    <input type="checkbox" id="check" />
     <nav>
+      <div class="logo">
+        <img src="img\logo.svg" />
+      </div>
       <div class="icon">Net<b style="color: red">F</b>lix</div>
       <div class="search_box">
         <input type="text" placeholder="Search your favorite movies here ..." />
@@ -24,6 +28,50 @@
         <li><a href="#">Tv Series</a></li>
         <li><a href="#">SignUp</a></li>
       </ul>
+      <label for="check" class="bar">
+        <span class="fa fa-bars" id="bars"></span>
+        <span class="fa fa-times" id="times"></span>
+      </label>
     </nav>
+
+    <div class="footer">
+      <!-- <div class="bottom-push"></div> -->
+      <footer>
+        <div class="centered_logo">
+          <div class="logo">
+            <img src="img\logo.svg" />
+          </div>
+          <div class="icon">Net<b style="color: red">F</b>lix</div>
+        </div>
+        <div class="social">
+          <h4>Stay Connected!</h4>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="message">
+          &copy; Made with
+          <i class="fas fa-heart heart"></i> by
+          <a href="https://github.com/AlankritVerma07"
+            ><b style="color: red">P</b>eaky <b style="color: red">B</b>oys</a
+          >
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

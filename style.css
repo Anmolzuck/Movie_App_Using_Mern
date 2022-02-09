@@ -16,12 +16,19 @@ nav {
   padding: 15px 30px;
 }
 
+nav .logo {
+  margin-left: 10px;
+  margin-top: 4px;
+  width: 10%;
+}
+
 nav .icon {
   font-size: 35px;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
-  margin-left: 60px;
+  margin-left: -90px;
+  margin-top: -2px;
 }
 
 nav ul {
@@ -51,8 +58,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #fff;
-  color: aqua;
+  background: red;
+  color: white;
 }
 
 nav .search_box {
@@ -87,4 +94,187 @@ nav .search_box span {
   position: relative;
   cursor: pointer;
   z-index: 1;
+}
+
+nav .bar {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+nav .bar span {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+}
+
+/*************************FOOTER************************/
+
+.footer {
+  /* border: 1px solid red; */
+  margin-top: 100vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 5rem; */
+  padding: 1rem 2rem;
+}
+
+footer .centered_logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+footer .icon {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-top: -3px;
+  margin-left: 2px;
+}
+
+footer .centered_logo .logo img {
+  width: 130%;
+  padding: 1px 10px;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .social h4 {
+  color: #fff;
+  align-self: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+footer .social ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+footer .social ul li a i {
+  color: #fff;
+}
+
+footer .message {
+  color: #fff;
+  align-self: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .message a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .heart {
+  color: red;
+}
+
+/* @media screen and (max-width: 1250px) { */
+@media (max-width: 1250px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  nav ul li:last-child {
+    background: red;
+    margin-right: 0px;
+    height: 0;
+    /* visibility: hidden; */
+    transition: 0.3s;
+  }
+  nav .logo {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: -210px;
+    width: 2%;
+  }
+  nav .icon {
+    display: block;
+    padding: 15px 30px;
+    margin-left: auto;
+    margin-top: -86px;
+  }
+
+  nav .search_box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  nav .search_box input {
+    width: 90%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  /* nav ul li:last-child {
+    height: 0;
+    /* visibility: hidden; */
+  /*transition: 0.3s;
+  } */
+
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav .bar {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    cursor: pointer;
+  }
+
+  nav .bar #times {
+    display: none;
+  }
+
+  #check:checked ~ nav .bar #times {
+    display: block;
+  }
+  #check:checked ~ nav .bar #bars {
+    display: none;
+  }
+  #check:checked ~ nav ul {
+    visibility: visible;
+    height: 200px;
+  }
+  /* #check:checked ~ nav ul li:last-child {
+    visibility: visible;
+  } */
 }
